@@ -1,0 +1,57 @@
+@import '../../01-Settings/variables.scss';
+
+body {
+  background-color: #161032;
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+  position: fixed;     // fija el navbar en la pantalla
+  top: 0;              // lo pega arriba
+  left: 0;
+  width: 100%;         // ocupa todo el ancho
+  background-color: #161032; 
+  z-index: 1000;
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); // sombra opcional para darle profundidad
+}
+
+.navbar_img img {
+  height: 60px; // 
+  width: auto;
+}
+
+.navbar__left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__logo {
+  width: 60px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.navbar {
+  width: 100%;
+}
+
+
+.navbar_links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  white-space: nowrap;
+
+  &:hover {
+    color: $color-accent;
+    text-decoration: underline;
+  }
+}
+
+
+
+
