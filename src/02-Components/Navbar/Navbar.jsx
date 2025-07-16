@@ -9,7 +9,7 @@ function Navbar() {
             <img src={fotoPrincipal} alt="Logo de APC" className="navbar__logo" />
         </div>
         
-        <div className="navbar__links">
+        <div className="navbar_links">
             <a href="#home">Inicio</a>
             <a href="#sobre-mi">Sobre mí</a>
             <a href="#proyectos">Proyectos</a>

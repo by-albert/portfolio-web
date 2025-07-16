@@ -1,4 +1,6 @@
-@import '../../01-Settings/variables.scss';
+// @import '../../01-Settings/variables.scss'; -> Dona un warning
+@use '../../01-Settings/variables.scss' as *; // as * => per poder seguir fent ús senseprefixes
+
 
 body {
   background-color: #161032;
@@ -9,7 +11,7 @@ body {
   position: fixed;     // fija el navbar en la pantalla
   top: 0;              // lo pega arriba
   left: 0;
-  width: 100%;         // ocupa todo el ancho
+  width: 100%;
   background-color: #161032; 
   z-index: 1000;
   padding: 1%;
@@ -24,34 +26,43 @@ body {
   width: auto;
 }
 
+// div que conté el Logotip
 .navbar__left {
   display: flex;
   align-items: center;
 }
 
+// el logo
 .navbar__logo {
-  width: 60px;
+  width: 120px;
   height: auto;
   border-radius: 8px;
 }
 
+// tota la capsa del navegador
 .navbar {
   width: 100%;
 }
 
+.navbar_links {
+  //dins del div
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2%;
 
-.navbar_links a {
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-  white-space: nowrap;
+    //links
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    white-space: nowrap;
 
-  &:hover {
-    color: $color-accent;
-    text-decoration: underline;
+    // hover per els links
+    &:hover {
+      color: $color-accent;
+      text-decoration: underline;
+    }
   }
 }
-
-
-
 
