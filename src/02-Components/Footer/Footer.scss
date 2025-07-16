@@ -1,0 +1,29 @@
+@use '../../01-Settings/variables.scss' as *; // as * => per poder seguir fent ús senseprefixes
+
+
+.footer {
+  background-color: #161032;
+  color: #e0e0e0;
+  padding: 2rem;
+  text-align: center;
+  border-top: 2px solid #333;
+  font-size: 0.9rem;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__social a {
+  color: #e0e0e0;
+  margin: 0 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $color-accent; // o usa $color-accent si usas variables
+  }
+}

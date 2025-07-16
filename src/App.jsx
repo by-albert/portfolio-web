@@ -1,14 +1,22 @@
 import './App.css'
 
-// Importamos los componentes
+// Importem tots els components
+// Navegador
 import Navbar from './02-Components/Navbar/Navbar';
+
+// Sobre mi
+
+// Footer
+import Footer from './02-Components/Footer/Footer'
 
 function App() {
 
   return(
     <div>
-      {/* Importamos el navegador */}
+      {/* Importem el navegador */}
       <Navbar />
+      
+      <Footer/>
 
     </div>
   )
