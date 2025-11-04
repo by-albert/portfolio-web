@@ -1,0 +1,60 @@
+@use '../../01-Settings/variables.scss' as *;
+
+// Caja principal del contenido 
+.about {
+  display: flex;
+  justify-content: space-between;    
+  align-items: center;
+  padding: 2rem 4rem;
+  color: $color-text;
+  font-family: $font-main;
+  gap: 2rem;                        
+
+  // Responsive para pantallas pequeñas
+  @media (max-width: 768px) {
+    flex-direction: column;          // texto arriba, foto abajo
+    text-align: center;
+  }
+}
+
+// Caja explicando quién soy
+.about__text {
+  flex: 1;
+  text-align: left;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    color: $color-accent;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+}
+
+// Caja donde se encuentra mi foto
+.about__photo {
+  flex: 1;                           
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 80%;
+    max-width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+
+    // Efecto al pasar el cursor por encima de la foto
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}

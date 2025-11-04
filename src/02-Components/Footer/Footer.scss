@@ -1,29 +1,41 @@
 @use '../../01-Settings/variables.scss' as *; // as * => per poder seguir fent ús senseprefixes
 
-
 .footer {
   background-color: #161032;
   color: #e0e0e0;
   padding: 2rem;
   text-align: center;
-  border-top: 2px solid #333;
+  border-top: 2px solid #ababab;
   font-size: 0.9rem;
+  width: 85vw;
 }
 
-.footer__content {
+.footer_contingut {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   gap: 1rem;
 }
 
-.footer__social a {
+.footer_contingut a {
   color: #e0e0e0;
   margin: 0 1rem;
   text-decoration: none;
   transition: color 0.3s ease;
 
   &:hover {
-    color: $color-accent; // o usa $color-accent si usas variables
+    color: $color-accent;
+    text-decoration: underline;
   }
+}
+
+.contacte_correu, 
+.contacte_github{
+  display: flex;
+  align-items: center;
+}
+
+.contacte_correu img, 
+.contacte_github img{
+  width: 50px;
 }

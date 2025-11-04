@@ -5,19 +5,18 @@ import './App.css'
 import Navbar from './02-Components/Navbar/Navbar';
 
 // Sobre mi
+import About from './02-Components/About/About';
 
 // Footer
-import Footer from './02-Components/Footer/Footer'
+import Footer from './02-Components/Footer/Footer'; 
 
 function App() {
 
   return(
     <div>
-      {/* Importem el navegador */}
       <Navbar />
-      
+      <About />
       <Footer/>
-
     </div>
   )
 
